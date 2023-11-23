@@ -118,14 +118,6 @@ h1 {
 .signup__slider .btn {
   margin-bottom: 0;
 }
-
-.signup__slider .btn:active,
-.signup__slider .btn:focus {
-  background: var(--color-primary);
-  color: #ffffff;
-}
-
-
 .signup > img {
   justify-self: end;
   height: 100%;
@@ -136,7 +128,7 @@ h1 {
   justify-self: center;
   align-self: center;
   margin-top: 12rem;
-  margin-left: 30rem;
+  margin-left: 18rem;
   text-align: center;
 }
 

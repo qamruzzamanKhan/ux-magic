@@ -680,9 +680,6 @@ h1 {
 .active a {
   color: #ffffff !important;
 }
-.active a img {
-  fill: #ffffff !important;
-}
 
 .sidenav__footer {
   text-align: center;

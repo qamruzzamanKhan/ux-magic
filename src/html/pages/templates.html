@@ -30,10 +30,10 @@
       <div class="sidenav">
         <div class="sidenav__content">
           <div class="logo--icon">
-            <a href="signup-page.html"
+            <a class="side-logo" href="signup-page.html"
               ><img src="../assets/images/logo.svg" alt=""
             /></a>
-            <a href="#home"
+            <a href="javascript:" class="close_side_nav" onclick=""
               ><img src="../assets/images/logo-right.svg" alt=""
             /></a>
           </div>
@@ -47,16 +47,18 @@
                   alt=""
                   class="icon-medium"
                 />
-                New Project</a
+                <span class="nav--item">New Project</span></a
               >
             </li>
             <li class="sidebar-text">
-              <a href="./projects-page.html" class="btn-icon hover-effect flex-content-start"
+              <a
+                href="./projects-page.html"
+                class="btn-icon hover-effect flex-content-start"
                 ><img
                   src="../assets/images/projects-icon.svg"
                   alt=""
                   class="icon-medium"
-                />Projects</a
+                /><span class="nav--item">Projects</span></a
               >
             </li>
             <li class="sidebar-text active">
@@ -67,7 +69,7 @@
                   src="../assets/images/templates-icon.svg"
                   alt=""
                   class="icon-medium"
-                />Templates</a
+                /><span class="nav--item">Templates</span></a
               >
             </li>
             <li class="sidebar-text">
@@ -76,7 +78,7 @@
                   src="../assets/images/Play.svg"
                   alt=""
                   class="icon-medium"
-                />Tutorials</a
+                /><span class="nav--item">Tutorials</span></a
               >
             </li>
           </ul>
@@ -123,34 +125,43 @@
         <div class="nav-self margin-top">
           <div class="flex-row">
             <ul class="d-content">
-              <li class="flex-element active border-r-8">
-                <a href="" class="font-14 font-w-500">All</a>
+              <li class="flex-element border-r-8">
+                <a
+                  href="javascript:"
+                  class="font-14 font-w-500 tab-a active-a"
+                  data-id="all"
+                  >All</a
+                >
               </li>
               <li class="flex-element">
                 <a
-                  href=""
-                  class="font-14 font-w-500 font-secondary border-r-8 hover-effect"
+                  href="javascript:"
+                  class="font-14 font-w-500 font-secondary border-r-8 hover-effect tab-a"
+                  data-id="ecommerce"
                   >E-Commerce</a
                 >
               </li>
               <li class="flex-element">
                 <a
-                  href=""
-                  class="font-14 font-w-500 font-secondary border-r-8 hover-effect"
+                  href="javascript:"
+                  class="font-14 font-w-500 font-secondary border-r-8 hover-effect tab-a"
+                  data-id="logistics"
                   >Logistics</a
                 >
               </li>
               <li class="flex-element">
                 <a
-                  href=""
-                  class="font-14 font-w-500 font-secondary border-r-8 hover-effect"
+                  href="javascript:"
+                  class="font-14 font-w-500 font-secondary border-r-8 hover-effect tab-a"
+                  data-id="gaming"
                   >Gaming</a
                 >
               </li>
               <li class="flex-element">
                 <a
-                  href=""
-                  class="font-14 font-w-500 font-secondary border-r-8 hover-effect"
+                  href="javascript:"
+                  class="font-14 font-w-500 font-secondary border-r-8 hover-effect tab-a"
+                  data-id="supply-chain"
                   >Supply Chain</a
                 >
               </li>
@@ -179,184 +190,757 @@
             >
           </div>
         </div>
-        <div class="grid">
-          <img
-            src="../../assets/images/new-user.svg"
-            alt=""
-            style="width: 100%"
-          />
-        </div>
-        <div class="grid grid4x">
-          <figure class="card__container">
-            <div class="card__image">
-              <img src="../../assets/images/new-user.png" alt="pr-sample23" />
-            </div>
-            <figcaption class="card__content">
-              <h3 class="font-16 font-w-500">New user registration</h3>
-              <p class="font-14 font-w-400">
-                Enter email or phone, Sign up via third party, OTP Verification.
-              </p>
-              <a
-                class="font-14 font-w-400 font-secondary padding-0"
-                onclick="modal.showModal()"
-                >View details
-                <img src="../../assets/images/right.svg" class="icon" alt=""
-              /></a>
-            </figcaption>
-          </figure>
-          <figure class="card__container">
-            <div class="card__image">
-              <img src="../../assets/images/new-user.png" alt="pr-sample23" />
-            </div>
-            <figcaption class="card__content">
-              <h3 class="font-16 font-w-500">New user registration</h3>
-              <p class="font-14 font-w-400">
-                Enter email or phone, Sign up via third party, OTP Verification.
-              </p>
-              <a
-                class="font-14 font-w-400 font-secondary padding-0"
-                onclick="modal.showModal()"
-                >View details
-                <img src="../../assets/images/right.svg" class="icon" alt=""
-              /></a>
-            </figcaption>
-          </figure>
-          <figure class="card__container">
-            <div class="card__image">
-              <img src="../../assets/images/new-user.png" alt="pr-sample23" />
-            </div>
-            <figcaption class="card__content">
-              <h3 class="font-16 font-w-500">New user registration</h3>
-              <p class="font-14 font-w-400">
-                Enter email or phone, Sign up via third party, OTP Verification.
-              </p>
-              <a
-                class="font-14 font-w-400 font-secondary padding-0"
-                onclick="modal.showModal()"
-                >View details
-                <img src="../../assets/images/right.svg" class="icon" alt=""
-              /></a>
-            </figcaption>
-          </figure>
-          <figure class="card__container">
-            <div class="card__image">
-              <img src="../../assets/images/new-user.png" alt="pr-sample23" />
-            </div>
-            <figcaption class="card__content">
-              <h3 class="font-16 font-w-500">New user registration</h3>
-              <p class="font-14 font-w-400">
-                Enter email or phone, Sign up via third party, OTP Verification.
-              </p>
-              <a
-                class="font-14 font-w-400 font-secondary padding-0"
-                onclick="modal.showModal()"
-                >View details
-                <img src="../../assets/images/right.svg" class="icon" alt=""
-              /></a>
-            </figcaption>
-          </figure>
-          <figure class="card__container">
-            <div class="card__image">
-              <img src="../../assets/images/new-user.png" alt="pr-sample23" />
-            </div>
-            <figcaption class="card__content">
-              <h3 class="font-16 font-w-500">New user registration</h3>
-              <p class="font-14 font-w-400">
-                Enter email or phone, Sign up via third party, OTP Verification.
-              </p>
-              <a
-                class="font-14 font-w-400 font-secondary padding-0"
-                onclick="modal.showModal()"
-                >View details
-                <img src="../../assets/images/right.svg" class="icon" alt=""
-              /></a>
-            </figcaption>
-          </figure>
 
-          <div class="">
-            <dialog id="modal" class="cart">
-              <!-- Swiper -->
-              <div class="grid grid2x cart--section">
-                <div class="swiper-container">
-                  <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img src="../../assets/images/slider-1.png" alt="" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="../../assets/images/slider-1.png" alt="" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="../../assets/images/slider-1.png" alt="" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="../../assets/images/slider-1.png" alt="" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="../../assets/images/slider-1.png" alt="" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="../../assets/images/slider-1.png" alt="" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="../../assets/images/slider-1.png" alt="" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="../../assets/images/slider-1.png" alt="" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="../../assets/images/slider-1.png" alt="" />
-                      </div>
-                    </div>
-                    <div class="swiper-button-next icon--check"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="float-bottom-right">
-                      <div class="swiper-pagination"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="cart__details">
-                  <div class="">
-                    <h3 class="font-24 font-w-500">Cart section</h3>
-                    <p class="font-16 font-w-400">
-                      This template was created with e-commerce cart section in
-                      mind, so you can spend more time personalising your
-                      section to prospects’ needs and less time designing your
-                      app flow.
-                    </p>
-                    <div class="cart__screens">
-                      <span class="text--gradient font-16 font-w-500"
-                        >4 Screens</span
-                      >
-                      <ul>
-                        <li class="font-14 font-w-400 text--grey">Home Page</li>
-                        <li class="font-14 font-w-400 text--grey">
-                          Details Page
-                        </li>
-                        <li class="font-14 font-w-400 text--grey">Checkout</li>
-                        <li class="font-14 font-w-400 text--grey">My Cart</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="cart__cta">
-                    <button class="btn__self" onclick="modal.close()">
-                      Back
-                    </button>
-                    <button
-                      class="btn__self btn__self--primary"
-                      onclick="modal.close()"
-                    >
-                      Select Flow
-                    </button>
-                  </div>
-                </div>
+        <div class="tab-active tab grid grid4x" data-id="all">
+          <label class="card--check">
+            <input type="checkbox" name="" id="" for="new--user"/>
+            <figure class="card__container new--user">
+              <div class="card__image">
+                <img src="../../assets/images/new-user.png" alt="pr-sample23" />
               </div>
-              <button onclick="modal.close()" class="close__btn">X</button>
-            </dialog>
-          </div>
+              <figcaption class="card__content">
+                <h3 class="font-16 font-w-500">New user registration</h3>
+                <p class="font-14 font-w-400">
+                  Enter email or phone, Sign up via third party, OTP
+                  Verification.
+                </p>
+                <a
+                  class="font-14 font-w-400 font-secondary padding-0"
+                  onclick="modal.showModal()"
+                  >View details
+                  <img src="../../assets/images/right.svg" class="icon" alt=""
+                /></a>
+              </figcaption>
+            </figure>
+          </label>
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/slider-1.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">Cart Section</h3>
+              <p class="font-14 font-w-400">
+                Add up the products to the cart section flow.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/listing.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">Listing Page</h3>
+              <p class="font-14 font-w-400">
+                Detailed listing page of the Student registor.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/payment.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">Payment Checkout</h3>
+              <p class="font-14 font-w-400">
+                Payment page for the check out products from list.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/slider-1.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">Cart Section</h3>
+              <p class="font-14 font-w-400">
+                Add up the products to the cart section flow.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/new-user.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">New user registration</h3>
+              <p class="font-14 font-w-400">
+                Enter email or phone, Sign up via third party, OTP Verification.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/slider-1.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">Cart Section</h3>
+              <p class="font-14 font-w-400">
+                Add up the products to the cart section flow.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/payment.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">Payment Checkout</h3>
+              <p class="font-14 font-w-400">
+                Payment page for the check out products from list.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/new-user.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">New user registration</h3>
+              <p class="font-14 font-w-400">
+                Enter email or phone, Sign up via third party, OTP Verification.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/payment.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">Payment Checkout</h3>
+              <p class="font-14 font-w-400">
+                Payment page for the check out products from list.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/slider-1.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">Cart Section</h3>
+              <p class="font-14 font-w-400">
+                Add up the products to the cart section flow.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/listing.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">Listing Page</h3>
+              <p class="font-14 font-w-400">
+                Detailed listing page of the Student registor.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="tab grid grid4x" data-id="ecommerce">
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/new-user.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">New user registration</h3>
+              <p class="font-14 font-w-400">
+                Enter email or phone, Sign up via third party, OTP Verification.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/slider-1.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">Cart Section</h3>
+              <p class="font-14 font-w-400">
+                Add up the products to the cart section flow.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/listing.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">Listing Page</h3>
+              <p class="font-14 font-w-400">
+                Detailed listing page of the Student registor.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/slider-1.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">Cart Section</h3>
+              <p class="font-14 font-w-400">
+                Add up the products to the cart section flow.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/new-user.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">New user registration</h3>
+              <p class="font-14 font-w-400">
+                Enter email or phone, Sign up via third party, OTP Verification.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/payment.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">Payment Checkout</h3>
+              <p class="font-14 font-w-400">
+                Payment page for the check out products from list.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/payment.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">Payment Checkout</h3>
+              <p class="font-14 font-w-400">
+                Payment page for the check out products from list.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="tab grid grid4x" data-id="logistics">
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/new-user.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">New user registration</h3>
+              <p class="font-14 font-w-400">
+                Enter email or phone, Sign up via third party, OTP Verification.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/slider-1.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">Cart Section</h3>
+              <p class="font-14 font-w-400">
+                Add up the products to the cart section flow.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/payment.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">Payment Checkout</h3>
+              <p class="font-14 font-w-400">
+                Payment page for the check out products from list.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/slider-1.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">Cart Section</h3>
+              <p class="font-14 font-w-400">
+                Add up the products to the cart section flow.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/slider-1.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">Cart Section</h3>
+              <p class="font-14 font-w-400">
+                Add up the products to the cart section flow.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/payment.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">Payment Checkout</h3>
+              <p class="font-14 font-w-400">
+                Payment page for the check out products from list.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/new-user.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">New user registration</h3>
+              <p class="font-14 font-w-400">
+                Enter email or phone, Sign up via third party, OTP Verification.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/slider-1.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">Cart Section</h3>
+              <p class="font-14 font-w-400">
+                Add up the products to the cart section flow.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/listing.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">Listing Page</h3>
+              <p class="font-14 font-w-400">
+                Detailed listing page of the Student registor.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="tab grid grid4x" data-id="gaming">
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/new-user.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">New user registration</h3>
+              <p class="font-14 font-w-400">
+                Enter email or phone, Sign up via third party, OTP Verification.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/slider-1.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">Cart Section</h3>
+              <p class="font-14 font-w-400">
+                Add up the products to the cart section flow.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/listing.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">Listing Page</h3>
+              <p class="font-14 font-w-400">
+                Detailed listing page of the Student registor.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/slider-1.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">Cart Section</h3>
+              <p class="font-14 font-w-400">
+                Add up the products to the cart section flow.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/new-user.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">New user registration</h3>
+              <p class="font-14 font-w-400">
+                Enter email or phone, Sign up via third party, OTP Verification.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/payment.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">Payment Checkout</h3>
+              <p class="font-14 font-w-400">
+                Payment page for the check out products from list.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="tab grid grid4x" data-id="supply-chain">
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/payment.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">Payment Checkout</h3>
+              <p class="font-14 font-w-400">
+                Payment page for the check out products from list.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/new-user.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">New user registration</h3>
+              <p class="font-14 font-w-400">
+                Enter email or phone, Sign up via third party, OTP Verification.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/slider-1.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">Cart Section</h3>
+              <p class="font-14 font-w-400">
+                Add up the products to the cart section flow.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+          <figure class="card__container">
+            <div class="card__image">
+              <img src="../../assets/images/listing.png" alt="pr-sample23" />
+            </div>
+            <figcaption class="card__content">
+              <h3 class="font-16 font-w-500">Listing Page</h3>
+              <p class="font-14 font-w-400">
+                Detailed listing page of the Student registor.
+              </p>
+              <a
+                class="font-14 font-w-400 font-secondary padding-0"
+                onclick="modal.showModal()"
+                >View details
+                <img src="../../assets/images/right.svg" class="icon" alt=""
+              /></a>
+            </figcaption>
+          </figure>
         </div>
       </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="">
+      <dialog id="modal" class="cart">
+        <!-- Swiper -->
+        <div class="grid grid2x cart--section">
+          <div class="swiper-container">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="../../assets/images/slider-1.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="../../assets/images/slider-1.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="../../assets/images/slider-1.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="../../assets/images/slider-1.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="../../assets/images/slider-1.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="../../assets/images/slider-1.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="../../assets/images/slider-1.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="../../assets/images/slider-1.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="../../assets/images/slider-1.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-button-next icon--check"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="float-bottom-right">
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <div class="cart__details">
+            <div class="">
+              <h3 class="font-24 font-w-500">Cart section</h3>
+              <p class="font-16 font-w-400">
+                This template was created with e-commerce cart section in mind,
+                so you can spend more time personalising your section to
+                prospects’ needs and less time designing your app flow.
+              </p>
+              <div class="cart__screens">
+                <span class="text--gradient font-16 font-w-500">4 Screens</span>
+                <ul>
+                  <li class="font-14 font-w-400 text--grey">Home Page</li>
+                  <li class="font-14 font-w-400 text--grey">Details Page</li>
+                  <li class="font-14 font-w-400 text--grey">Checkout</li>
+                  <li class="font-14 font-w-400 text--grey">My Cart</li>
+                </ul>
+              </div>
+            </div>
+            <div class="cart__cta">
+              <button class="btn__self" onclick="modal.close()">Back</button>
+              <button
+                class="btn__self btn__self--primary"
+                onclick="modal.close()"
+              >
+                Select Flow
+              </button>
+            </div>
+          </div>
+        </div>
+        <button onclick="modal.close()" class="close__btn">X</button>
+      </dialog>
     </div>
 
     <script
@@ -366,17 +950,11 @@
     ></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        pagination: {
-          el: ".swiper-pagination",
-          type: "fraction",
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../assets/js/app.min.js"></script>
   </body>
 </html>

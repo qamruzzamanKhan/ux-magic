@@ -357,7 +357,7 @@ h1 {
 .main .form_wrapper .radio {
   display: none;
 }
-.main .form_wrapper .tab {
+.main .form_wrapper .tabs {
   width: 50%;
   border: solid 2px #f1f1f1;
   height: 40px;
@@ -381,12 +381,12 @@ h1 {
       -ms-user-select: none;
           user-select: none;
 }
-.main .form_wrapper .tab.login_tab {
+.main .form_wrapper .tabs.login_tab {
   border-right: none;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-.main .form_wrapper .tab.signup_tab {
+.main .form_wrapper .tabs.signup_tab {
   border-left: none;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -662,8 +662,19 @@ h1 {
   margin-bottom: 16px;
   border-radius: 8px;
 }
+.menu li:first-child:hover img {
+  -webkit-filter: unset;
+          filter: unset;
+}
 .menu li:hover {
   background: #346ef1;
+}
+.menu li:hover a {
+  color: #ffffff;
+}
+.menu li:hover img {
+  -webkit-filter: invert(100%) sepia(9%) saturate(0%) hue-rotate(258deg) brightness(106%) contrast(105%);
+          filter: invert(100%) sepia(9%) saturate(0%) hue-rotate(258deg) brightness(106%) contrast(105%);
 }
 .menu li a {
   text-decoration: none;
@@ -679,6 +690,15 @@ h1 {
 }
 .active a {
   color: #ffffff !important;
+}
+.active img {
+  -webkit-filter: invert(100%) sepia(9%) saturate(0%) hue-rotate(258deg) brightness(106%) contrast(105%);
+          filter: invert(100%) sepia(9%) saturate(0%) hue-rotate(258deg) brightness(106%) contrast(105%);
+}
+
+.active-a {
+  background: #346ef1;
+  color: #ffffff;
 }
 
 .sidenav__footer {
@@ -1079,4 +1099,49 @@ h1 {
   border-radius: 36px;
   padding: 4px;
   background: var(--color-copywrite);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #c7eae0;
+  font-family: "sans-serif", sans-serif;
+}
+
+.tab h2 {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.tab p {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: justify;
+}
+
+.tab {
+  display: none;
+}
+
+.tab-active {
+  display: grid;
+}
+
+.nav-close {
+  width: 95px;
+}
+.nav-close .nav--item {
+  display: none;
+}
+.nav-close .logo--icon {
+  width: 0;
+}
+.nav-close .logo--icon .logo {
+  display: none;
+}
+.nav-close .sidenav__footer {
+  display: none;
+}
+
+.grid--nav-close {
+  grid-template-columns: 95px auto;
 }

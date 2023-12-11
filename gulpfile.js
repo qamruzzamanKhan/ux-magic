@@ -47,13 +47,13 @@ gulp.task('fileinclude', function() {
   });
 
 
-// function js(cb){
-//     return gulp.src(["src/assets/js/app.js"])
-//         .pipe(concat("app.min.js"))
-//         .pipe(gulp.dest("dist/assets/js/"))
-//         .pipe(connect.reload());
-//     cb();
-// }
+function js(cb){
+    return gulp.src(["src/assets/js/app.js"])
+        .pipe(concat("app.min.js"))
+        .pipe(gulp.dest("dist/assets/js/"))
+        .pipe(connect.reload());
+    cb();
+}
 
 
 function scss(cb) {
@@ -115,7 +115,7 @@ function service(cb) {
 exports.default = gulp.parallel(
   init,
   html,
-  // js,
+  js,
   scss,
   copyscss,
   // fonts,
@@ -126,7 +126,7 @@ exports.default = gulp.parallel(
 exports.build = gulp.parallel(
   init,
   html,
-  // js,
+  js,
   scss,
   copyscss,
   imageprocess,

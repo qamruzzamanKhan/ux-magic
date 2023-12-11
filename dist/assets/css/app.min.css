@@ -1145,3 +1145,21 @@ body {
 .grid--nav-close {
   grid-template-columns: 95px auto;
 }
+
+.card--check {
+  position: relative;
+}
+
+input[type=checkbox] {
+  position: absolute;
+  right: 40px;
+  top: 17px;
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  outline: 0;
+}
+input[type=checkbox]:checked + .card__container {
+  border: 2px solid var(--color-primary);
+  border-radius: 8px;
+}
